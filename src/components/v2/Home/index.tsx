@@ -70,7 +70,6 @@ export const Home2 = () => {
                 <div className={`${s.homeCard} ${s.description}`}>
                 <h3>Olá, tudo bem?? Seja Bem-Vindo(a)!</h3>
                 <p>Sou o Eduardo, mas pode me chamar de Edu. Esse é o meu portfólio e clicando no botão abaixo ou navegando pelo menu superior a direita, encontrará vários projetos que participei/criei.</p>
-                <p>Ahhh, também tem um formulário onde você pode me mandar mensagem. Vou adorar respondê-lo(a).</p>
                 <Link to="/projects">
                     <button className={s.button}>Meus Projetos</button>
                 </Link>

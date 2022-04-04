@@ -88,7 +88,7 @@ export const projects = [
     },
     {
         "name": "APIRest Noz Books",
-        "description": "Aplicação construída com react, typescript, vite, axios, react-router-dom e sass que acessa o servidor através de login e token, voltando dados do usuário e dos books",
+        "description": "Aplicação construída com react, typescript, vite, axios, react-router-dom e sass.",
         "icons": [
             { icon: Html, color: orange },
             { icon: Css, color: blue },

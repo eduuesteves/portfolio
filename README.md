@@ -31,8 +31,9 @@ O projeto já está na versão 2, contudo, ainda é possível acessar a versão 
     yarn add emailjs-dom
 
 ## Layout Desktop 🍕
-## Layout Tablet 🍔
+![Layout Desktop](./src/components/images/Layout/desktop1.png)
 ## Layout Mobile 🍟
+![Layout Mobile](./src/components/images/Layout/mobile1.png)
 
 Para terminar...
 - [x] Context API com weather
