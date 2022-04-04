@@ -1,0 +1,40 @@
+:root {
+  --bg-github: rgb(49, 49, 49);
+  --bg-github-hover: rgb(119, 119, 119);
+  --bg-card-hover: #dd8759;
+  --bg-button-card: rgb(231, 109, 43);
+  --li: #e9595e;
+  --white: #fff;
+  --bg-card: #355070;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.v1 {
+  font-family: 'Space Mono', monospace;
+
+  button, input{ 
+    font-family: 'Space Mono', monospace; 
+  }
+
+  div {
+    background: var(--bg-github);
+  }
+
+  button {
+    background: var(--li)
+  }
+
+  h1 {
+    color: var(--white);
+  }
+
+  p {
+    background: var(--bg-card-hover);
+  }
+}

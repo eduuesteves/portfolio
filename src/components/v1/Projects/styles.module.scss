@@ -1,0 +1,23 @@
+.project {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  li {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--li);
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+.h2 {
+  margin-top: 160px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}

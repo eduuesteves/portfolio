@@ -1,0 +1,106 @@
+.card {
+    width: 100%;
+    background-color: var(--cards);
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover {
+        box-shadow: 0 0 3px black;
+    }
+
+    > img {
+        width: 330px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    li {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+    }
+}
+
+.tecIcon {
+    width: 330px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+    align-items: center;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.projectDescription {
+    width: 330px;
+    height: 150px;
+    margin-top: 1rem;
+    color: var(--text);
+
+    h4 {
+        font-size: 24px;
+        color: var(--text);
+    }
+
+    p {
+        margin-top: .5rem;
+        font-size: 18px;
+        text-align: left;
+        color: var(--text);
+    }
+}
+
+
+.projectButton {
+    width: 330px;
+
+    button {
+        padding: .6rem 1rem;
+
+        &:nth-child(1) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.transparent {
+    background: none;
+    height: 0;
+}
+
+.transparent button, .transparent img, .transparent .tecIcon, .transparent .projectDescription {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        width: 367px;
+    }
+
+    .card > img, .tecIcon, .projectDescription, .projectButton {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1150px) {
+    .card {
+        width: 360px;
+    }
+
+    .card > img, .tecIcon, .projectDescription, .projectButton {
+        width: 335px;
+    }
+
+    .projectName {
+        width: 355px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+}

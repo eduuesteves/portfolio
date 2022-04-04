@@ -1,0 +1,80 @@
+.card {
+    margin: 20px 0;
+    padding: 10px;
+    width: 40vw;
+    background: var(--bg-card);
+    box-shadow: 10px 10px 4px black;
+    border-radius: 20px;
+    
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin: 20px 5px;
+        color: white;
+    }
+}
+.acessar {
+    position: relative;
+    margin:30px 0 0 5px;
+    height: 50px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+        padding: 10px;
+        background: var(--bg-github);
+        margin: 0 0 0 10px;
+        width: 50px;
+        cursor: pointer;
+        border-width: 2px;
+        border-style: outset;
+
+        &:hover {
+            background: var(--bg-github-hover);
+        }
+    }
+
+    button {
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+        background: var(--bg-button-card);
+        padding: 0 5rem;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+
+        &:hover {
+            background: var(--bg-card-hover);
+        }
+    }
+}
+
+.a {
+    height: 50px;
+
+    &:visited {
+        color:lavender;
+    }
+}
+
+.div {
+    height: 140px;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 80vw;
+        
+        button {
+            padding: 0 3rem;
+        }
+    }
+}

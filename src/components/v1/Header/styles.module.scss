@@ -1,0 +1,41 @@
+.header {
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 90px;
+  width: 100vw;
+  background: #355070;
+  z-index: 999;
+  box-shadow: 0 0 10px black;
+  
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    .perfil {
+      margin-top: 10px;
+      margin-left: 80px;
+      border-radius: 100%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    .perfil {
+      margin-left: 60px;
+    }
+  }
+}
