@@ -21,7 +21,7 @@ export function AuthProvider({ children }: { children: JSX.Element}) {
     }
 
     useEffect(() => {
-        useGithub("eduddz");
+        useGithub("eduuesteves");
     }, [])
 
     async function usePokedex(pokemon: string) {
