@@ -42,8 +42,8 @@ export function Pokedex2() {
             <h3 style={{padding: "1rem 0", background: "rgba(0, 0, 0, 0.3)", width: "100%", color: "white"}}>{pokemon?.name}</h3>
             <img 
                 className="pokemon" 
-                width="100%"
-                height="100%"
+                width="auto"
+                height="auto"
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${num}.png`} 
                 alt="Pokemon"
             />
