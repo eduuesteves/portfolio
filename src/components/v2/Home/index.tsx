@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import s from './styles.module.scss';
 
+import FotoPerfil from "../../images/Foto-de-Perfil.webp";
+
 import data from '../data.json';
 
 import { 
@@ -39,7 +41,7 @@ export const Home2 = () => {
         <div className={s.home}>
             <div className={s.profile}>
             <div className={`${s.homeCard} ${s.img}`}>
-                <img src={user?.avatar_url} alt={user?.name} />
+                <img src={FotoPerfil} alt={user?.name} />
             </div>
             <div className={`${s.homeCard} ${s.name}`}>
                 <h2>{user?.name}</h2>
@@ -86,13 +88,13 @@ export const Home2 = () => {
                     <li style={{backgroundColor: "chocolate"}}><SiFirebase size={50} color="white" /></li>
                     <li style={{backgroundColor: "black"}}><SiGithub size={50} color="white" /></li>
                     <li style={{backgroundColor: "#1E90FF"}}><SiTypescript size={50} color="white" /></li>
-                    <li>Axios</li>
-                    <li>Express</li>
-                    <li>Context API</li>
-                    <li>Mysql</li>
-                    <li>Mysqlite</li>
-                    <li>React Router Dom</li>
-                    <li>Vite</li>
+                    <li style={{backgroundColor: "#fff"}}>Axios</li>
+                    <li style={{backgroundColor: "#fff"}}>Express</li>
+                    <li style={{backgroundColor: "#fff"}}>Context API</li>
+                    <li style={{backgroundColor: "#fff"}}>Mysql</li>
+                    <li style={{backgroundColor: "#fff"}}>Mysqlite</li>
+                    <li style={{backgroundColor: "#fff"}}>React Router Dom</li>
+                    <li style={{backgroundColor: "#fff"}}>Vite</li>
                 </ul>
             </div>
 

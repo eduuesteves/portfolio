@@ -45,7 +45,8 @@
 
   .light {
     --bg: white;
-    --cards: rgb(104, 104, 104);
+    //--cards: rgb(104, 104, 104);
+    --cards: rgb(177, 177, 177);
     --border: 15px;
     --menu: black;
     --button-hover: rgb(49, 49, 49);
@@ -57,11 +58,20 @@
     position: fixed;
     bottom: 40px;
     right: 25px;
-    width: 55px;
-    height: 55px;
-    display: grid;
-    place-items: center;
+    padding: .5rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--button-hover);
     z-index: 1;
     border-radius: 5px;
+    color: #fff;
+    background: rgb(49, 49, 49);
+    box-shadow: 5px 5px 0 #000;
+
+    &:hover {
+      background: rgb(49, 49, 49);
+      color: #fff;
+    }
   }
