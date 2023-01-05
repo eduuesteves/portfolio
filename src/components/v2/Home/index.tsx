@@ -41,7 +41,7 @@ export const Home2 = () => {
         <div className={s.home}>
             <div className={s.profile}>
             <div className={`${s.homeCard} ${s.img}`}>
-                <img loading="lazy" src={FotoPerfil} width="100%" height="100%" alt={user?.name} />
+                <img loading="lazy" src={FotoPerfil} width="auto" height="auto" alt={user?.name} />
             </div>
             <div className={`${s.homeCard} ${s.name}`}>
                 <h2>{user?.name}</h2>
