@@ -60,9 +60,96 @@ export const PROJECTS_DATA: ProjectItem[] = [
     ]
   },
   {
-    id: "faz-rango-ss",
-    title: "Faz Rango SS",
-    slug: "faz-rango-ss",
+  id: "edulang",
+  title: "EduLang",
+  slug: "edulang",
+  category: "Backend & Infra",
+  summary: "Linguagem de programação educacional criada do zero em TypeScript, com sintaxe própria, interpretador e arquitetura preparada para evolução multiplataforma.",
+  description: "EduLang é uma linguagem de programação educacional desenvolvida para tornar os conceitos fundamentais de programação, compiladores e execução de código mais acessíveis. O projeto implementa sua própria análise léxica, análise sintática, AST, ambiente de execução e interpretador, utilizando TypeScript como linguagem de implementação. A arquitetura foi pensada para evoluir futuramente para um compilador com diferentes backends, permitindo que uma única aplicação EduLang possa ser direcionada para Web, Windows, Android e outras plataformas.",
+  highlights: [
+    "Linguagem com sintaxe e regras próprias, desenvolvida do zero para fins educacionais",
+    "Pipeline completo envolvendo código-fonte, lexer, parser, AST, ambiente de execução e interpretador",
+    "Sistema de variáveis, condições, operadores, entrada de dados, saída de dados e retorno de funções",
+    "Mensagens de erro didáticas para ajudar o programador a entender problemas no código",
+    "Arquitetura preparada para evoluir de um interpretador para uma ferramenta de desenvolvimento multiplataforma",
+    "Possibilidade futura de utilizar diferentes backends para executar uma mesma aplicação em Web, Windows e dispositivos móveis"
+  ],
+  techStack: [
+    "TypeScript",
+    "Node.js",
+    "Lexer",
+    "Parser",
+    "AST",
+    "Interpreter",
+    "Compiler Architecture"
+  ],
+  image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop",
+  featured: true,
+  links: [
+    {
+      label: "Repositório GitHub",
+      url: "https://github.com/eduuesteves/edulang",
+      type: "github"
+    }
+  ],
+  metrics: [
+    {
+      label: "Tipo",
+      value: "Linguagem de Programação"
+    },
+    {
+      label: "Implementação",
+      value: "TypeScript"
+    },
+    {
+      label: "Execução atual",
+      value: "Interpretador"
+    },
+    {
+      label: "Objetivo",
+      value: "Desenvolvimento Multiplataforma"
+    }
+  ],
+  githubRepo: "edulang",
+  roadmap: [
+    {
+      phase: "Fase 1: Fundamentos da Linguagem",
+      description: "Definição da sintaxe própria da EduLang e implementação de variáveis, valores, operadores, saída e entrada de dados."
+    },
+    {
+      phase: "Fase 2: Lexer & Parser",
+      description: "Implementação do processamento do código-fonte, transformação em tokens e validação da estrutura sintática da linguagem."
+    },
+    {
+      phase: "Fase 3: AST & Interpretador",
+      description: "Construção da Abstract Syntax Tree e implementação do ambiente de execução responsável por interpretar e executar os programas EduLang."
+    },
+    {
+      phase: "Fase 4: Controle de Fluxo & Funções",
+      description: "Expansão da linguagem com condições, repetições, funções, parâmetros, escopo e retorno de valores."
+    },
+    {
+      phase: "Fase 5: Compilador JavaScript",
+      description: "Criação de um backend capaz de transformar programas EduLang em JavaScript, permitindo aproveitar o ecossistema e a portabilidade da plataforma."
+    },
+    {
+      phase: "Fase 6: Universal Intermediate Representation",
+      description: "Introdução de uma representação intermediária própria para separar a linguagem dos diferentes destinos de execução."
+    },
+    {
+      phase: "Fase 7: Plataforma EduLang",
+      description: "Criação de ferramentas de desenvolvimento, CLI, gerenciamento de projetos, servidor de desenvolvimento e comandos para diferentes plataformas."
+    },
+    {
+      phase: "Fase 8: Multiplataforma",
+      description: "Evolução da arquitetura para permitir que um único projeto EduLang possa gerar aplicações para Web, Windows, Android e outras plataformas."
+    }
+  ]
+},
+  {
+    id: "faz-rango",
+    title: "Faz Rango",
+    slug: "faz-rango",
     category: "Frontend",
     summary: "Aplicação web interativa focada em receitas culinárias e organização de cardápios.",
     description: "Faz Rango SS é uma aplicação desenvolvida para facilitar a busca, organização e exibição de receitas de forma prática. Conta com uma interface limpa, filtragem dinâmica e integração com ambiente Docker para automações locais.",

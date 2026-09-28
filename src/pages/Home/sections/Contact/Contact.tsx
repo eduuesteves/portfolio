@@ -38,14 +38,13 @@ export const Contact: React.FC = () => {
         formState: { errors, isSubmitting } 
     } = useForm<ContactFormData>({
         resolver: zodResolver(contactSchema),
-        mode: "onBlur" // Valida o campo quando o usuário tira o foco
+        mode: "onBlur"
     });
 
-    // 3. Função de Submissão Segura
+    // 3. Função de Submissão Segura via Serverless Proxy
     const onSubmit = async (data: ContactFormData) => {
-        // Bloqueia bots que marcam o honeypot
         if (data.botcheck) {
-            setFeedback({ type: "success", text: "Mensagem enviada com sucesso!" }); // Falso positivo para enganar o bot
+            setFeedback({ type: "success", text: "Mensagem enviada com sucesso!" });
             reset();
             return;
         }
@@ -53,11 +52,11 @@ export const Contact: React.FC = () => {
         setFeedback(null);
 
         try {
-            const response = await fetch("https://api.web3forms.com/submit", {
+            // Aponta para a nossa função serverless interna em vez da Web3Forms direta
+            const response = await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json", Accept: "application/json" },
                 body: JSON.stringify({
-                    access_key: import.meta.env.VITE_WEB3FORMS_KEY,
                     name: data.name,
                     email: data.email,
                     message: data.message,
@@ -69,7 +68,7 @@ export const Contact: React.FC = () => {
             
             if (result.success) {
                 setFeedback({ type: "success", text: "Proposta despachada com sucesso!" });
-                reset(); // Limpa os campos magicamente sem re-renderizar a tela
+                reset();
             } else {
                 setFeedback({ type: "error", text: result.message || "Erro de servidor. Tente novamente." });
             }
@@ -125,7 +124,7 @@ export const Contact: React.FC = () => {
 
                     <form className={styles.contactFormV2} onSubmit={handleSubmit(onSubmit)}>
                         
-                        {/* Honeypot Field (Invisível para humanos, armadilha para bots) */}
+                        {/* Honeypot Field */}
                         <input type="checkbox" {...register("botcheck")} style={{ display: 'none' }} />
 
                         <div className={styles.inputWrapper}>

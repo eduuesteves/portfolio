@@ -456,69 +456,103 @@
                             }
                         }
 
-                        .roadmapList {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1.5rem;
-                            position: relative;
-                            padding-left: 1.75rem;
-                            margin-top: 0.5rem;
+@keyframes pulseDot {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent); }
+    70% { box-shadow: 0 0 0 6px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+}
 
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                left: 7px;
-                                top: 5px;
-                                bottom: 5px;
-                                width: 2px;
-                                background: linear-gradient(to bottom, var(--accent) 0%, transparent 100%);
-                                border-radius: 2px;
-                            }
+.roadmapList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding-left: 2.75rem;
+    margin-top: 0.75rem;
 
-                            .roadmapItem {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 6px;
-                                position: relative;
-                                background: var(--bg-primary);
-                                border: 2px solid var(--border-color);
-                                padding: 1.25rem 1.5rem;
-                                border-radius: 12px;
-                                box-shadow: 2px 2px 0px var(--border-color);
-                                transition: all 0.2s ease;
+    // Linha vertical com efeito luminoso e gradiente refinado
+    &::before {
+        content: '';
+        position: absolute;
+        left: 11px;
+        top: 12px;
+        bottom: 12px;
+        width: 3px;
+        background: linear-gradient(
+            to bottom, 
+            var(--accent) 0%, 
+            color-mix(in srgb, var(--accent) 50%, var(--border-color)) 50%,
+            var(--border-color) 100%
+        );
+        border-radius: 4px;
+    }
 
-                                &:hover {
-                                    transform: translateX(4px);
-                                    border-color: var(--accent);
-                                }
+    .roadmapItem {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        background: var(--card-bg);
+        border: 2px solid var(--border-color);
+        padding: 1.35rem 1.6rem;
+        border-radius: 16px;
+        box-shadow: 3px 3px 0px var(--border-color);
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
-                                .timelineDot {
-                                    position: absolute;
-                                    left: -1.75rem -4px;
-                                    top: 1.35rem;
-                                    width: 14px;
-                                    height: 14px;
-                                    background: var(--bg-primary);
-                                    border: 3px solid var(--accent);
-                                    border-radius: 50%;
-                                    box-shadow: 0 0 0 4px var(--card-bg);
-                                    z-index: 2;
-                                }
+        &:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 5px 5px 0px var(--accent);
 
-                                strong {
-                                    font-size: 0.9rem;
-                                    color: var(--text-primary);
-                                    font-family: Fonts.$mono;
-                                    font-weight: 700;
-                                }
+            .timelineDot {
+                background: var(--accent);
+                transform: scale(1.15);
+                animation: pulseDot 1.5s infinite;
+            }
+        }
 
-                                span {
-                                    font-size: 0.85rem;
-                                    color: var(--text-secondary);
-                                    line-height: 1.6;
-                                }
-                            }
-                        }
+        // Ponto indicador sofisticado com efeito de foco
+        .timelineDot {
+            position: absolute;
+            left: -2.55rem;
+            top: 1.55rem;
+            width: 14px;
+            height: 14px;
+            background: var(--bg-primary);
+            border: 3px solid var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--card-bg);
+            z-index: 2;
+            transition: all 0.2s ease;
+        }
+
+        strong {
+            font-size: 0.925rem;
+            color: var(--text-primary);
+            font-family: Fonts.$mono;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            // Pequeno marcador visual antes do título da fase
+            &::before {
+                content: '//';
+                color: var(--accent);
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+        }
+
+        span {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin: 0;
+        }
+    }
+}
 
                         .folderTreeBlock {
                             background: var(--bg-primary);

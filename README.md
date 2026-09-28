@@ -1,185 +1,153 @@
 <div align="center">
 
-# 🚀 Developer Portfolio & Showcase
+# 🚀 Eduardo Esteves — Developer Portfolio
 
-  <p align="center">
-    <strong>Um ecossistema front-end moderno, ultra-responsivo e de alta performance projetado para destacar projetos, habilidades e a trajetória na engenharia de software.</strong>
-  </p>
+**A modern, responsive, and performance-driven portfolio showcase built with clean frontend architecture and advanced SCSS.**
 
-  <p align="center">
-    <a href="https://github.com/eduuesteves/portfolio/stargazers"><img src="https://img.shields.io/github/stars/eduuesteves/portfolio?style=for-the-badge&color=8A2BE2&logo=github" alt="Stars Badge"/></a>
-    <a href="https://github.com/eduuesteves/portfolio/network/members"><img src="https://img.shields.io/github/forks/eduuesteves/portfolio?style=for-the-badge&color=8A2BE2&logo=github" alt="Forks Badge"/></a>
-    <a href="https://github.com/eduuesteves/portfolio/blob/main/LICENSE"><img src="https://img.shields.io/github/license/eduuesteves/portfolio?style=for-the-badge&color=8A2BE2" alt="License Badge"/></a>
-    <img src="https://img.shields.io/badge/SCSS-Hot%20Pink?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS Badge"/>
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge"/>
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge"/>
-  </p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![SCSS](https://img.shields.io/badge/SCSS-Hot%20Pink?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![GitHub stars](https://img.shields.io/github/stars/eduuesteves/portfolio?style=for-the-badge&color=blue)](https://github.com/eduuesteves/portfolio/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/eduuesteves/portfolio?style=for-the-badge&color=green)](https://github.com/eduuesteves/portfolio/commits/main)
+
+---
 
 </div>
 
+## 📖 Sobre / Visão Geral
+
+Este repositório contém o código-fonte do **Portfolio Pessoal de Eduardo Esteves**, projetado para apresentar habilidades técnicas, trajetória profissional, projetos em destaque e canais de contato de forma clara, elegante e altamente performática.
+
+A aplicação foi desenvolvida com foco em **Mobile-First Design**, **Arquitetura Modular CSS/SCSS** e **Semântica Web**, garantindo excelente tempo de carregamento, navegabilidade intuitiva e acessibilidade (a11y) em qualquer dispositivo.
+
+### 🎯 Princípios Arquiteturais
+
+- **Zero Bloatware:** Ausência de frameworks pesados desnecessários, priorizando CSS/SCSS puro e otimizações nativas de renderização.
+- **Manutenibilidade:** Organização estilística inspirada em padrões como **BEM (Block Element Modifier)** e arquitetura modular de diretórios SCSS.
+- **Acessibilidade & SEO:** Estrutura HTML5 semântica para indexação eficiente em motores de busca e leitores de tela.
+- **Performance:** Recursos de mídia comprimidos e pipeline de build enxuto para pontuação elevada em auditorias Lighthouse.
+
 ---
 
-## 📖 Sobre o Projeto
+## 🖼️ Demonstração / Screenshots Responsivas
 
-O **Developer Portfolio** é uma aplicação web construída sob as melhores práticas da engenharia de software front-end. O projeto foi concebido para entregar uma experiência de usuário (UX) fluida, intuitiva e esteticamente refinada, sem comprometer os tempos de carregamento e a eficiência do código.
+A interface adapta-se dinamicamente a diferentes resoluções e densidades de tela, proporcionando uma experiência contínua e fluida.
 
-Com foco central em arquitetura **CSS/SCSS modular**, a aplicação utiliza o ecossistema SASS para abstrair variáveis Globais, Mixins de Responsividade, Configurações de Temas e Componentização limpa. Esta estrutura facilita a manutenção contínua, escalabilidade de design system e reutilização de código.
+### Desktop
+![Desktop View](./screenshot/desktop.png)
 
-### 🎯 Objetivos de Arquitetura
-* **Mobile-First Strategy**: Layout construído progressivamente a partir de dispositivos móveis para telas ultra-wide.
-* **Baixa Latência & Performance**: Ausência de frameworks pesados desnecessários; entrega de CSS minificado e otimizado.
-* **Acessibilidade (a11y)**: Conformidade com padrões de legibilidade, estruturas semânticas HTML5 e suporte a navegação via teclado.
-* **Manutenibilidade**: Organização de arquivos com convenções rígidas de pastas e separação clara de responsabilidades.
+### Tablet
+![Tablet View](./screenshot/tablet.png)
 
----
-
-## 📸 Demonstração / Screenshots Responsivas
-
-A aplicação adapta-se perfeitamente a variadas resoluções e densidades de tela:
-
-### 💻 Desktop View
-![Desktop View](./src/screenshot/desktop.png)
-
-### 📐 Tablet View
-![Tablet View](./src/screenshot/tablet.png)
-
-### 📱 Mobile View
-![Mobile View](./src/screenshot/mobile.png)
+### Mobile
+![Mobile View](./screenshot/mobile.png)
 
 ---
 
 ## ✨ Recursos e Funcionalidades
 
-- [x] **Arquitetura SCSS Modular**: Organização de estilos dividida em variáveis (`_variables.scss`), mixins (`_mixins.scss`), reset global e módulos de componentes.
-- [x] **Design Totalmente Responsivo**: Layouts adaptáveis testados rigorosamente em uma vasta gama de resoluções de tela.
-- [x] **Componentes Interativos**: Menu de navegação dinâmico, galerias de projetos e seções interativas com feedbacks visuais e animações suaves.
-- [x] **Interface Otimizada (UI/UX)**: Tipografia clara, contraste adequado e padrão visual consistente.
-- [x] **SEO e Tags Meta**: Estrutura otimizada para rastreadores de motores de busca e compartilhamento em redes sociais.
+- 📱 **Design 100% Responsivo:** Grid e layouts adaptáveis (Flexbox e CSS Grid) testados em múltiplas resoluções.
+- 🎨 **Estilização com SCSS Avançado:**
+  - Uso de variáveis, *mixins* reutilizáveis e funções customizadas.
+  - Estruturação em partials modularizados para facilidade de manutenção.
+- ⚡ **Alta Performance:** Execução rápida com taxa mínima de repintura (*repaint*) e reflow no navegador.
+- ♿ **Acessibilidade (a11y):**
+  - Contraste de cores validado.
+  - Navegação fluida via teclado e suporte a leitores de tela.
+- 💫 **Animações e Micro-interações:** Transições suaves em hover, scroll e estados interativos usando CSS Transitions e Animations.
+- 📬 **Seção de Contato Direto:** Links diretos e integrados para e-mail, GitHub, LinkedIn e redes profissionais.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Pré-requisitos e Guia de Instalação
 
-| Tecnologia | Descrição / Uso no Projeto |
-| :--- | :--- |
-| **HTML5 Semântico** | Estruturação acessível e otimizada para motores de busca. |
-| **SCSS / SASS** | Pré-processamento de CSS, variáveis de tema, mixins e arquitetura modular. |
-| **JavaScript (ES6+)** | Lógica de manipulação de DOM, menus dinâmicos e comportamentos assíncronos/interativos. |
-| **NPM / Build Tools** | Gerenciamento de dependências, compilação de scripts e minificação de assets. |
+Para executar e modificar este projeto localmente, você precisará ter as seguintes ferramentas instaladas em seu ambiente:
 
----
+- [Node.js](https://nodejs.org/) (Versão 16.x ou superior)
+- [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
 
-## 📋 Pré-requisitos
+### Passo a Passo de Instalação
 
-Antes de iniciar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente local:
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/eduuesteves/portfolio.git
+   ```
 
-* [Node.js](https://nodejs.org/) (Versão LTS recomendada, v16.x ou superior)
-* [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
-* Git para controle de versão
+2. **Acesse o diretório do projeto:**
+   ```bash
+   cd portfolio
+   ```
 
----
+3. **Instale as dependências do projeto:**
+   ```bash
+   npm install
+   ```
 
-## 🚀 Guia de Instalação e Execução
-
-Siga os passos abaixo para clonar e executar o projeto em seu ambiente de desenvolvimento local:
-
-### 1. Clonar o Repositório
-
-```bash
-# Clone o repositório utilizando HTTPS
-git clone https://github.com/eduuesteves/portfolio.git
-
-# Acesse o diretório do projeto
-cd portfolio
-```
-
-### 2. Instalar Dependências
-
-```bash
-# Instale as dependências via NPM
-npm install
-
-# Ou caso utilize Yarn
-yarn install
-```
-
-### 3. Compilar SCSS e Iniciar o Servidor de Desenvolvimento
-
-```bash
-# Executa a compilação do SCSS e o modo watch para alterações em tempo real
-npm run dev
-
-# Ou se preferir usar o comando de build direto
-npm run build
-```
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm start
+   ```
+   *O projeto estará disponível no seu navegador no endereço `http://localhost:3000` (ou na porta indicada pelo terminal).*
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Como Usar e Estrutura do Projeto
 
-A organização de diretórios e arquivos do projeto segue uma estrutura limpa e intuitiva:
+### Estrutura de Diretórios
 
-```text
+```plain
 portfolio/
-├── index.html
-├── package.json
-├── README.md
-└── src/
-    ├── assets/
-    │   ├── icons/
-    │   └── images/
-    ├── js/
-    │   └── main.js
-    ├── scss/
-    │   ├── base/
-    │   │   ├── _reset.scss
-    │   │   └── _typography.scss
-    │   ├── components/
-    │   │   ├── _buttons.scss
-    │   │   ├── _cards.scss
-    │   │   └── _navbar.scss
-    │   ├── utils/
-    │   │   ├── _mixins.scss
-    │   │   └── _variables.scss
-    │   └── main.scss
-    └── screenshot/
-        ├── desktop.png
-        ├── mobile.png
-        └── tablet.png
+├── src/
+│   ├── assets/          # Imagens, ícones e fontes estáticas
+│   ├── scss/            # Módulos e estilos Sass
+│   │   ├── abstracts/   # Variáveis, mixins e funções
+│   │   ├── base/        # Reset e tipografia global
+│   │   ├── components/  # Botões, cards, modais
+│   │   ├── layout/      # Header, footer, grid, navbar
+│   │   └── main.scss    # Ponto de entrada do SCSS
+│   ├── screenshot/      # Imagens de preview do README
+│   └── index.html       # Estrutura HTML do projeto
+├── package.json         # Scripts e dependências
+└── README.md            # Documentação do projeto
 ```
 
----
+### Comandos Disponíveis
 
-## 💡 Como Usar e Personalizar
+- **Executar ambiente de desenvolvimento (com Live Reload):**
+  ```bash
+  npm run dev
+  ```
 
-### Alterando Variáveis de Tema (Cores e Fontes)
-Você pode personalizar toda a paleta de cores e tipografia da aplicação alterando o arquivo de variáveis globais:
+- **Compilar e minificar SCSS para Produção:**
+  ```bash
+  npm run build
+  ```
 
-1. Abra o arquivo `src/scss/utils/_variables.scss`.
-2. Edite os valores das variáveis SCSS:
+- **Validar/Formatador de código (Linter):**
+  ```bash
+  npm run lint
+  ```
+
+### Customização de Temas e Cores
+
+Para alterar as paletas de cores e fontes globais, modifique o arquivo de variáveis em `src/scss/abstracts/_variables.scss`:
 
 ```scss
-// Exemplo de personalização em src/scss/utils/_variables.scss
-
-$primary-color: #8a2be2;
-$secondary-color: #00f2fe;
-$bg-dark: #0f172a;
-$text-light: #f8fafc;
-
-$font-primary: 'Inter', sans-serif;
-$font-code: 'Fira Code', monospace;
+// Exemplo de estilização das variáveis do tema
+$primary-color: #0070f3;
+$secondary-color: #1a1a1a;
+$bg-color: #ffffff;
+$text-color: #333333;
+$font-main: 'Inter', sans-serif;
 ```
-
-3. O pré-processador recompilará automaticamente o arquivo `.css` resultante com as novas diretrizes visuais.
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
 
 ---
 
 <div align="center">
-  <p>Desenvolvido por <a href="https://github.com/eduuesteves">Eduardo Esteves</a></p>
+
+Desenvolvido por **[Eduardo Esteves](https://github.com/eduuesteves)**.
+Se este projeto te ajudou ou te inspirou, considere deixar uma ⭐️!
+
 </div>

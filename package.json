@@ -20,8 +20,10 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@vercel/node": "^16.0.1",
     "@vitejs/plugin-react": "^6.1.1",
     "typescript": "^7.0.2",
     "vite": "^8.3.1",
