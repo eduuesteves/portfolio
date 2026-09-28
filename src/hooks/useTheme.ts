@@ -10,7 +10,7 @@ export function useTheme() {
       const savedTheme = localStorage.getItem(STORAGE_KEY) as ThemeType;
       if (savedTheme) return savedTheme;
     }
-    return "dark";
+    return "eduardo";
   });
 
   useEffect(() => {
