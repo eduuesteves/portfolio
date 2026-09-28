@@ -1,0 +1,106 @@
+@use "Fonts.scss" as Fonts;
+@use "Colors.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, #root {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    
+    /* Aplicação da fonte de leitura (Inter) */
+    font-family: Fonts.$text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1000px;
+        height: 400px;
+        background: radial-gradient(ellipse at top, var(--accent-glow) 0%, transparent 70%);
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.6;
+    }
+}
+
+/* Aplicação global da fonte de títulos (Outfit) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Fonts.$title;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Garantindo que inputs e botões herdem a tipografia correta */
+button, input, textarea, select {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+li { list-style: none; }
+
+.section-normal {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(40px, 8vw, 120px) 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+        padding: clamp(60px, 10vw, 120px) 2rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+    border: 2px solid var(--bg-primary);
+
+    &:hover {
+        background: var(--text-secondary);
+    }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) var(--bg-primary);
+}

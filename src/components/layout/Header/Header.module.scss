@@ -1,0 +1,185 @@
+@use "../../../styles/Colors.scss";
+@use "../../../styles/Fonts.scss";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--card-bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 2px solid var(--border-color);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease, border-color 0.3s ease;
+
+    .headerContainer {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+            padding: 0 2rem;
+        }
+
+        .brandLogo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+
+            &:hover {
+                opacity: 0.92;
+            }
+
+            .brandIconBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--accent-glow);
+                border: 2px solid var(--border-color);
+                border-radius: 12px;
+                color: var(--accent);
+                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                box-shadow: 3px 3px 0px var(--border-color);
+
+                @media (min-width: 768px) {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+
+            &:hover .brandIconBox {
+                transform: scale(1.06) rotate(6deg);
+                border-color: var(--border-hover);
+                background: var(--accent);
+                color: #ffffff;
+                box-shadow: 4px 4px 0px var(--border-color);
+            }
+
+            .brandTextWrapper {
+                display: flex;
+                align-items: baseline;
+                font-family: Fonts.$mono, monospace;
+                font-size: 1.15rem;
+                font-weight: 700;
+                letter-spacing: -0.5px;
+
+                @media (min-width: 768px) {
+                    font-size: 1.25rem;
+                }
+
+                .brandName {
+                    color: var(--text-primary);
+                }
+
+                .brandExtension {
+                    color: var(--accent);
+                    font-weight: 800;
+                    margin-left: 1px;
+                }
+            }
+        }
+
+        .desktopNav {
+            display: none;
+            align-items: center;
+            gap: 6px;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            padding: 5px;
+            border-radius: 9999px;
+            box-shadow: 4px 4px 0px var(--border-color);
+
+            @media (min-width: 850px) {
+                display: flex;
+            }
+
+            .navLink {
+                position: relative;
+                padding: 8px 18px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: var(--text-secondary);
+                text-decoration: none;
+                border-radius: 9999px;
+                transition: color 0.2s ease, background 0.2s ease;
+
+                &:hover {
+                    color: var(--text-primary);
+                    background: rgba(255, 255, 255, 0.08);
+                }
+
+                &:focus-visible {
+                    outline: none;
+                    color: var(--text-primary);
+                    box-shadow: 0 0 0 2px var(--border-focus);
+                }
+
+                &.active {
+                    color: #ffffff;
+                    background: var(--accent);
+                    font-weight: 600;
+                    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+
+        .headerActions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media (min-width: 768px) {
+                gap: 12px;
+            }
+
+            .menuToggleBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--card-bg);
+                border: 2px solid var(--border-color);
+                border-radius: 12px;
+                color: var(--text-primary);
+                cursor: pointer;
+                transition: all 0.25s ease;
+                box-shadow: 3px 3px 0px var(--border-color);
+
+                @media (min-width: 768px) {
+                    width: 42px;
+                    height: 42px;
+                }
+
+                @media (min-width: 850px) {
+                    display: none;
+                }
+
+                &:hover {
+                    border-color: var(--border-hover);
+                    background: var(--accent);
+                    color: #fff;
+                    transform: translateY(-2px);
+                    box-shadow: 4px 4px 0px var(--border-color);
+                }
+
+                &:focus-visible {
+                    outline: none;
+                    border-color: var(--border-focus);
+                }
+            }
+        }
+    }
+}

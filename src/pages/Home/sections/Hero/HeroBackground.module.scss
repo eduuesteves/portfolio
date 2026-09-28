@@ -1,0 +1,100 @@
+@use "../../../../styles/Fonts.scss";
+
+.backgroundWrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+@keyframes tickerLeft {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 0.4; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.techGrid {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, var(--border-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.08;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 95%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 95%);
+}
+
+.tickerTrack {
+    position: absolute;
+    top: 5.5rem;
+    display: flex;
+    gap: 2.5rem;
+    white-space: nowrap;
+    will-change: transform;
+    opacity: 0.75;
+    animation: tickerLeft 40s linear infinite;
+
+    @media (min-width: 768px) {
+        top: 5.5rem;
+        gap: 3.5rem;
+    }
+
+    .tickerItem {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Fonts.$mono, monospace;
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        
+        background: color-mix(in srgb, var(--card-bg) 75%, transparent);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid color-mix(in srgb, var(--border-color) 80%, var(--accent) 20%);
+        padding: 8px 16px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition: border-color 0.3s ease;
+
+        .liveDot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent);
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+
+        span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        &:hover {
+            border-color: var(--border-focus);
+        }
+    }
+}
+
+.heroGlow {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    max-width: 450px;
+    max-height: 450px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(80px);
+    opacity: 0.4;
+}

@@ -1,0 +1,111 @@
+// ==========================================
+// DESIGN TOKENS & MULTI-TEMAS (Dark, Light, Neon, Eduardo Esteves)
+// ==========================================
+
+:root, [data-theme="dark"] {
+    --bg-primary: #09090b;
+    --bg-secondary: #18181b;
+    --card-bg: #18181b;
+    --card-bg-glass: rgba(24, 24, 27, 0.85);
+
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+
+    --accent: #3b82f6;          
+    --accent-hover: #2563eb;
+    --accent-glow: rgba(59, 130, 246, 0.2);
+    
+    --cta-accent: #10b981;      
+    --cta-hover: #059669;
+
+    --glass-bg: rgba(24, 24, 27, 0.8);
+
+    --border-color: #27272a;
+    --border-hover: #3b82f6;    
+    --border-focus: #10b981;    
+}
+
+[data-theme="light"] {
+    --bg-primary: #eef2f6;              
+    --bg-secondary: #e2e8f0;            
+    --card-bg: #ffffff;                 
+    --card-bg-glass: rgba(255, 255, 255, 0.92);
+
+    --text-primary: #1e293b;            
+    --text-secondary: #475569;          
+    --text-muted: #64748b;              
+
+    --accent: #0284c7;                  
+    --accent-hover: #0369a1;
+    --accent-glow: rgba(2, 132, 199, 0.15);
+    
+    --cta-accent: #0d9488;              
+    --cta-hover: #0f766e;
+
+    --glass-bg: rgba(238, 242, 246, 0.9);
+
+    --border-color: #94a3b8;            
+    --border-hover: #0284c7;    
+    --border-focus: #0d9488;    
+}
+
+[data-theme="neon"] {
+    --bg-primary: #04040a;
+    --bg-secondary: #0d0d1f;
+    --card-bg: #0d0d1f;
+    --card-bg-glass: rgba(13, 13, 31, 0.85);
+
+    --text-primary: #f4f4ff;
+    --text-secondary: #a8a8e5;
+    --text-muted: #7575b5;
+
+    --accent: #f43f5e;          
+    --accent-hover: #e11d48;
+    --accent-glow: rgba(244, 63, 94, 0.25);
+    
+    --cta-accent: #8b5cf6;      
+    --cta-hover: #7c3aed;
+
+    --glass-bg: rgba(13, 13, 31, 0.85);
+
+    --border-color: #2a2a6b;
+    --border-hover: #f43f5e;    
+    --border-focus: #8b5cf6;    
+}
+
+[data-theme="eduardo"] {
+    --bg-primary: #120f24;              
+    --bg-secondary: #080611;            
+    
+    --card-bg: #1e2235;                 
+    --card-bg-glass: rgba(30, 34, 53, 0.96);
+
+    --text-primary: #ffffff;            
+    --text-secondary: #f3f4f6;          
+    --text-muted: #9ca3af;              
+
+    --accent: #34d399;                  
+    --accent-hover: #059669;               
+    --accent-glow: rgba(52, 211, 153, 0.25); 
+
+    --cta-accent: #fe5b3a;              
+    --cta-hover: #c42100;               
+
+    --glass-bg: rgba(18, 15, 36, 0.90);
+
+    --border-color: #000000;            
+    --border-hover: #34d399;            
+    --border-focus: #fe5b3a;            
+}
+
+:root {
+    // Atualizado para refletir o novo Kit Tipográfico
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+    /* Escala Tipográfica Fluida Padronizada */
+    --fs-section-title: clamp(1.8rem, 3.5vw, 2.5rem);
+    --fs-section-subtitle: clamp(0.9rem, 1.2vw, 1.1rem);
+    --fs-hero-title: clamp(2rem, 5vw, 3.3rem);
+}

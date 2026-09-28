@@ -1,0 +1,40 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin-bottom adaptável: maior em desktops, menor em mobile */
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+    
+    &.center {
+        align-items: center;
+        text-align: center;
+    }
+
+    &.left {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    &.right {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .title {
+        /* font-size fluido usando clamp */
+        font-size: clamp(1.75rem, 4vw, 2.35rem);
+        color: var(--text-primary);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        color: var(--text-secondary);
+        font-size: clamp(0.95rem, 2vw, 1.05rem);
+        line-height: 1.6;
+        max-width: 620px;
+        margin: 0;
+    }
+}

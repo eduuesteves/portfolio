@@ -1,0 +1,20 @@
+// 1. Importação do Google Fonts (Tech Clean Kit)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;700;800&display=swap');
+
+// 2. Variáveis de Fonte
+$title: 'Outfit', sans-serif;       // Para H1, H2, H3 (Impacto)
+$text: 'Inter', sans-serif;         // Para parágrafos, spans e descrições (Leitura)
+$mono: 'JetBrains Mono', monospace; // Para tags, botões, terminal e metadados (Intermediário)
+
+// 3. Classes Utilitárias (Opcional, mas útil)
+.font-title {
+  font-family: $title;
+}
+
+.font-text {
+  font-family: $text;
+}
+
+.font-mono {
+  font-family: $mono;
+}
